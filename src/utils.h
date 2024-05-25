@@ -12,6 +12,10 @@
 
 #include <stdbool.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Determines if the input integer is a power of 2
  */
@@ -53,3 +57,7 @@ int LogOfTwo(int x);
  * @return int     0 if successful, -1 otherwise.
  */
 int ReadFile(const char* filename, char** out, int* len);
+
+#ifdef __cplusplus
+}
+#endif

@@ -12,6 +12,10 @@
  */
 #include "solver.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Solve an LQR problem using rsLQR
  *
@@ -72,3 +76,7 @@ Matrix ndlqr_GetSolution(NdLqrSolver* solver);
 int ndlqr_CopySolution(NdLqrSolver* solver, double* soln);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

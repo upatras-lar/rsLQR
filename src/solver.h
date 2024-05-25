@@ -18,6 +18,10 @@
 #include "lqr_problem.h"
 #include "nddata.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief A struct describing how long each part of the solve took, in milliseconds.
  *
@@ -226,3 +230,7 @@ int ndlqr_PrintSolveProfile(NdLqrSolver* solver);
 NdLqrProfile ndlqr_GetProfile(NdLqrSolver* solver);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

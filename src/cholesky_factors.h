@@ -13,6 +13,10 @@
  */
 #include "linalg.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Stores a list of CholeskyInfo structs for the rsLQR solver
  *
@@ -91,3 +95,7 @@ int ndlqr_GetSFactorization(NdLqrCholeskyFactors* cholfacts, int leaf, int level
                             CholeskyInfo** cholfact);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

@@ -14,6 +14,10 @@
 
 #include "matrix.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Holds the data for a single time step of LQR
  *
@@ -132,3 +136,7 @@ Matrix ndlqr_Getr(LQRData* lqrdata);  ///< @brief Get affine control cost
 void ndlqr_PrintLQRData(LQRData* lqrdata);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

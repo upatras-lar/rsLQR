@@ -14,6 +14,10 @@
 
 #include "lqr_data.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Describes an LQR problem with affine terms
  *
@@ -68,3 +72,7 @@ LQRProblem* ndlqr_NewLQRProblem(int nstates, int ninputs, int nhorizon);
 int ndlqr_FreeLQRProblem(LQRProblem* lqrprob);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

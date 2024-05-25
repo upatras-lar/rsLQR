@@ -1,6 +1,10 @@
 /** @addtogroup LinearAlgebra
  * @{ */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #ifdef MATRIX_LATIME_ENABLE
 #define MATRIX_LATIME_START MatrixLinAlgTimeStart()
 #define MATRIX_LATIME_STOP MatrixLinAlgTimeStop()
@@ -17,3 +21,7 @@ void MatrixLinAlgTimeReset();
 double MatrixGetLinAlgTimeMilliseconds();
 
 /**@}*/
+
+#ifdef __cplusplus
+}
+#endif

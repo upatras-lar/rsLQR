@@ -16,6 +16,10 @@
 
 #include "solver.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Solve all the equations for the lowest-level diagonal blocks, by timestep
  *
@@ -147,3 +151,7 @@ int ndlqr_UpdateShurFactor(NdData* fact, NdData* soln, int index, int i, int lev
 int ndlqr_ComputeShurCompliment(NdLqrSolver* solver, int index, int level, int upper_level);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

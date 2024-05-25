@@ -15,6 +15,10 @@
 #include "linalg.h"
 #include "riccati_solver.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Solve the LQR problem using Riccati recursion and a forward simulation of the
  *        linear dynamics.
@@ -49,3 +53,7 @@ int ndlqr_BackwardPass(RiccatiSolver* solver);
 int ndlqr_ForwardPass(RiccatiSolver* solver);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

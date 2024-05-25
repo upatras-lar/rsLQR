@@ -16,6 +16,10 @@
 #include "lqr_problem.h"
 #include "matrix.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Read an LQRData structure from JSON data
  *
@@ -76,3 +80,7 @@ LQRProblem* ndlqr_ReadLQRProblemJSONFile(const char* filename);
 Matrix ReadMatrixJSONFile(const char* filename, const char* name);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

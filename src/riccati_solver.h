@@ -15,6 +15,10 @@
 #include "lqr_problem.h"
 #include "matrix.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Solver that uses Riccati recursion to solve an LQR problem.
  *
@@ -176,3 +180,7 @@ int ndlqr_GetRiccatiSolveTimes(RiccatiSolver* solver, double* t_solve, double* t
                                double* t_fp);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

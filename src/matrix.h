@@ -14,6 +14,10 @@
 
 #include <stdbool.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Represents a matrix of double-precision data
  *
@@ -245,3 +249,7 @@ int PrintMatrix(const Matrix* mat);
 int PrintRowVector(const Matrix* mat);
 
 /**@}*/
+
+#ifdef __cplusplus
+}
+#endif

@@ -15,6 +15,10 @@
 #include "lqr_data.h"
 #include "matrix.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief A chunk of memory for a single time step
  *
@@ -145,3 +149,7 @@ int ndlqr_GetNdFactor(NdData* nddata, int index, int level, NdFactor** factor);
 void ndlqr_ResetNdData(NdData* nddata);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

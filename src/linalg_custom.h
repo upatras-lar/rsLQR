@@ -13,6 +13,10 @@
  */
 #include "matrix.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Flag for a successful Cholesky decomposition,
  *        i.e. the matrix is positive definite.
@@ -159,3 +163,7 @@ int clap_CholeskySolve(Matrix* A, Matrix* b);
 int clap_LowerTriBackSub(Matrix* L, Matrix* b, bool istransposed);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

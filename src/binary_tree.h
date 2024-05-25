@@ -13,6 +13,10 @@
 #pragma once
 #include <stdbool.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @brief Represents a range of consecutive integers
  *
@@ -122,3 +126,7 @@ int ndlqr_GetIndexLevel(const OrderedBinaryTree* tree, int index);
 int ndlqr_GetIndexAtLevel(const OrderedBinaryTree* tree, int index, int level);
 
 /**@} */
+
+#ifdef __cplusplus
+}
+#endif

@@ -14,6 +14,10 @@
 
 #include "matrix.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #ifdef USE_MKL
 static const int kUseMKL = 1;
 #else
@@ -206,3 +210,7 @@ enum MatrixLinearAlgebraLibrary MatrixGetLinearAlgebraLibrary();
 void MatrixPrintLinearAlgebraLibrary();
 
 /**@}*/
+
+#ifdef __cplusplus
+}
+#endif
